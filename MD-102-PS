@@ -1,0 +1,10 @@
+Install-Module MSOnline
+
+Get-Service
+
+$PSVersionTable.PSVersion
+winget search Microsoft.PowerShell
+
+# Task 2 - Create users by using PowerShell
+Install-Module Microsoft.Graph -Scope CurrentUser
+Connect-MgGraph -scopes "user.readwrite.all, group.readwrite.all"
